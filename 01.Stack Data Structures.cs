@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class StackExample
+public class Stack
 {
     public static void Main(string[] args)
     {
