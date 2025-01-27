@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class HelloWorld
+public class PriorityQueue
 {
     public static void Main(string[] args)
     {
