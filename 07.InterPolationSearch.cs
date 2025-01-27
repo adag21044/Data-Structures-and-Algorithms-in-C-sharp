@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class InterpolationSearch
 {
     static int InterpolationSearch(int[] arr, int low, int high, int target)
     {
