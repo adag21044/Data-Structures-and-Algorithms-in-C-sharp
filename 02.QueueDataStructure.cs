@@ -10,7 +10,7 @@ using System.Collections.Generic;
 // 5. Resource Loading: Queue and process resource loading tasks sequentially.
 
 
-public class QueueExample
+public class Queue
 {
     public static void Main(string[] args)
     {
