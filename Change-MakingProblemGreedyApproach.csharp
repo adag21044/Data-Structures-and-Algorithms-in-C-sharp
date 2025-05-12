@@ -1,0 +1,35 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int get = 200;    // Amount given by the customer
+        int total = 73;   // Total cost of the items
+        GiveChange(get, total);
+    }
+
+    static void GiveChange(int get, int total)
+    {
+        // Array of coin denominations in descending order
+        int[] denominations = { 100, 50, 20, 10, 5, 2, 1 };
+
+        int change = get - total; // Total change to return
+        int coinCount = 0;        // Total number of coins used
+
+        Console.WriteLine($"Change to return: {change} TL");
+
+        foreach (int coin in denominations)
+        {
+            // While the coin fits into the remaining change
+            while (change >= coin)
+            {
+                change -= coin;      // Subtract the coin value from change
+                coinCount++;         // Increment coin counter
+                Console.WriteLine($"{coin} TL given. Remaining: {change} TL");
+            }
+        }
+
+        Console.WriteLine($"Total number of coins used: {coinCount}");
+    }
+}
