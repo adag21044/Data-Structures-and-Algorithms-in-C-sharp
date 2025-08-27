@@ -12,7 +12,7 @@ public class DictionaryTutorial
         // 2. Adding elements to the Dictionary (Add method)
         countryCodes.Add(1, "United States");
         countryCodes.Add(44, "United Kingdom");
-        countryCodes.Add(90, "Turkey");
+        countryCodes.Add(90, "France");
 
         // 3. Adding elements to the Dictionary (using indexer)
         countryCodes[49] = "Germany"; // If key 49 does not exist, it will add. If it exists, it will update.
@@ -27,9 +27,9 @@ public class DictionaryTutorial
         }
 
         // 6. Checking if a value exists
-        if (countryCodes.ContainsValue("Turkey"))
+        if (countryCodes.ContainsValue("France"))
         {
-            Console.WriteLine("Turkey exists in the dictionary.");
+            Console.WriteLine("France exists in the dictionary.");
         }
 
         // 7. Safe way to get a value (TryGetValue)
